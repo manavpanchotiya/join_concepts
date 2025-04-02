@@ -11,6 +11,18 @@
 
 // Write our function (we must define it too!) below
 // ...
+const joinList = function(conceptList){
+  let newArr = '';
+  for (let i = 0; i < conceptList.length; i++){
+    newArr += conceptList[i];
+
+    if (i != conceptList.length - 1){
+      newArr += ", ";
+    }
+
+  }
+  return newArr;
+}
 
 // Test / Driver Code below...
 const conceptList = ["gists", "types", "operators", "iteration", "problem solving"];
